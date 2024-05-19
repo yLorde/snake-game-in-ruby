@@ -1,10 +1,4 @@
 update do
-    if @square.x == @apple.x
-        if @square.y == @apple.y
-            @apple.x = 100
-            @apple.y = 100
-        end
-    end
 
     if @square.x > 0
         if @square.x > @width / 4
@@ -16,7 +10,7 @@ update do
     else 
         @square.x = 1
     end
-
+    
     if @square.y > 0
         if @square.y > @height / 4
             if @square.y > @height - @square.size
